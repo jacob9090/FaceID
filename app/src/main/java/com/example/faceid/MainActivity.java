@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private String timeStamp;
 
     private static final String APP_LOCATION = "faceRecognition";
-    private static final String FILE_PROVIDER_PATH = "com.example.scorpion.fileprovider";
+    private static final String FILE_PROVIDER_PATH = "com.example.faceid.fileprovider";
     private static final int REGISTER_CAMERA_REQUEST_CODE = 100;
     private static final int REGISTER_GALLERY_REQUEST_CODE = 101;
     private static final int RECOGNIZE_CAMERA_REQUEST_CODE = 102;
