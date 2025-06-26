@@ -10,15 +10,13 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toobar"
-        />
+        layout="@layout/toobar" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20dp"
-        >
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -26,16 +24,14 @@
             android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:textSize="8pt"
-            android:text="Image Preview"
-            />
+            android:text="Image Preview" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_weight="2"
-            android:background="@drawable/borders"
-            />
+            android:background="@drawable/borders" />
 
         <TextView
             android:layout_width="match_parent"
@@ -43,8 +39,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:textSize="8pt"
-            android:text="Person Name"
-            />
+            android:text="Person Name" />
 
         <TextView
             android:id="@+id/textView"

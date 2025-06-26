@@ -5,14 +5,13 @@
     android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
     android:elevation="10dp"
-    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-    >
+    android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
-        >
+        android:padding="5dp">
+
         <Button
             android:id="@+id/btn_show_faces"
             android:layout_width="100dp"
@@ -20,8 +19,8 @@
             android:layout_alignParentRight="true"
             android:background="@color/colorPrimary"
             android:textColor="@color/white"
-            android:text="Show Faces"
-            />
+            android:text="Show Faces" />
+
     </RelativeLayout>
 
 </androidx.appcompat.widget.Toolbar>
