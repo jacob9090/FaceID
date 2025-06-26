@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Scorpion</string>
+    <string name="app_name">FaceID</string>
     <string name="title_activity_show_registered_faces">ShowRegisteredFaces</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>

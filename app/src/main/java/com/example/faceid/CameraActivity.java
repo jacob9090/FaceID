@@ -3,6 +3,7 @@ package com.example.faceid;
 import static com.example.faceid.MainActivity.CAMERA_INDEX;
 
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -14,6 +15,9 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.widget.ImageView;
+
+import android.Manifest;
+import androidx.core.content.ContextCompat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -107,6 +111,15 @@ public class CameraActivity extends AppCompatActivity implements CameraBridgeVie
         dic_boxes = new Hashtable<String, Box>();
         dic_reg_faces = new Hashtable<String, Bitmap>();
         registered_persons = new ArrayList<String>();
+
+        // Grant camera permission for OpenCV's JavaCameraView if already
+        // approved in the launching activity. Without this call the
+        // camera preview remains black even when the permission has
+        // been granted at runtime.
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_GRANTED) {
+            javaCameraView.setCameraPermissionGranted();
+        }
 
         javaCameraView.setCameraIndex(CAMERA_INDEX);
         javaCameraView.setVisibility(SurfaceView.VISIBLE);
